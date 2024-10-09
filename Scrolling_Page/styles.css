@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.content-section {
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6 ease-out, transform 0.6s ease-out;;
+}
+
+.content-section:nth-child(even) {
+    background-color: #ddd;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
